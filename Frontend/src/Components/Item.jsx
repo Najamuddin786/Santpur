@@ -14,7 +14,7 @@ export default function Item({ selectedSort }) {
     // Fetch data from API
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/item");
+        const response = await axios.get("https://santpur.onrender.com/api/item");
         setItems(response.data); // Assuming the API returns an array of items
       } catch (err) {
         console.error("Error fetching items:", err);
