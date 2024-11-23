@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import '../App.css'
 import { useState } from "react";
-import NavImg from "./NavIMG";
+import NavImg from "./NavImg";
 
 export default function Navbar(){
     let [navClick,setNavClick]=useState(false)
