@@ -81,6 +81,7 @@ export default function Item({ selectedSort }) {
           border="1px solid"
           borderColor="gray.300"
           borderRadius="xl"
+          bg='white'
           p={4}
           mb={4}
           flexDirection="column"
