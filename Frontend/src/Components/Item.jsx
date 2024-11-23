@@ -74,14 +74,13 @@ export default function Item({ selectedSort }) {
   }
 
   return (
-    <Flex p={5} flexWrap="wrap" gap="10px" justifyContent="center">
+    <Flex p={5}  flexWrap="wrap" gap="10px"  justifyContent="center">
       {sortedItems.map((item) => (
         <Flex
           key={item.id} // Unique key for each item
           border="1px solid"
           borderColor="gray.300"
           borderRadius="xl"
-          bg='white'
           p={4}
           mb={4}
           flexDirection="column"
@@ -89,11 +88,12 @@ export default function Item({ selectedSort }) {
           w={{ base: "100%", sm: "48%", md: "32%", xl: "23%" }}
           alignItems="center"
           gap="1"
+          bg='white'
           _hover={{ boxShadow: "lg", transform: "scale(1.05)", border: "1px solid green", background: "black", color: "white" }} // Optional hover effect
           onClick={() => handleItemClick(item.id)} // On click event to navigate
           cursor="pointer" // Show pointer cursor when hovering
         >
-          <Box py="5px" px="20px" bg="white" boxShadow={"xl"} borderRadius={"md"}>
+          <Box py="5px" px="20px" bg="white"  borderRadius={"md"}>
             <Image src={item.img} w="100px" />
           </Box>
           <Text fontWeight="500">{item.title}</Text>
