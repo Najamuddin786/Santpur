@@ -9,7 +9,7 @@ export default function Navbar(){
     let [navClick,setNavClick]=useState(false)
 
     return <>
-            <Flex zIndex={'1500'} boxShadow={'2xl'} position={'sticky'} top={'0px'} alignItems={'center'} bg='white' py='2px' px='5vw' justifyContent={'space-between'} >
+            <Flex zIndex={'1500'} boxShadow={'xl'} position={'sticky'} top={'0px'} alignItems={'center'} bg='white' py='2px' px='5vw' justifyContent={'space-between'} >
                 <Flex  cursor={'pointer'} boxShadow={'2xl'} borderRadius={'md'} p='10px' bg='yellow' flexDir={'column'}>
                     <Flex mt='-10px' fontWeight={'700'} fontSize={'34px'}>
                         <Text color={'red'}>SANT</Text>
